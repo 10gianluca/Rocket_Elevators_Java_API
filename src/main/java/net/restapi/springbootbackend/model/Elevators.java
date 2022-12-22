@@ -15,10 +15,10 @@ public class Elevators {
     private long id;
     @Column(name = "column_id")
 
-    private Integer column_id;
+    private Integer column_id; // Rename this field to match the column name in the table
     @Column(name = "serialNumber")
 
-    private Integer serialNumber;
+    private String serialNumber;
     @Column(name = "model")
 
     private String model;
@@ -48,8 +48,6 @@ public class Elevators {
 
     @Column(name = "updated_at")
     private String updated_at;
-
-
 
 
 }

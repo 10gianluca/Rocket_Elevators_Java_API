@@ -30,7 +30,7 @@ public class ElevatorsController {
     //Get Elevators By ID
     //http://localhost:8080/api/elevators/1
     @GetMapping("{id}")
-    public ResponseEntity<Elevators> getUserById(@PathVariable ("id") long id){
+    public ResponseEntity<Elevators> getElevatorById(@PathVariable ("id") long id){
         return new ResponseEntity<Elevators>(elevatorsService.getElevatorById(id), HttpStatus.OK);
     }
 
